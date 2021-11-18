@@ -1,0 +1,9 @@
+path_to_file: str = input ("Введите имя входящего файла: ")
+#у меня файл находится в C:\Openp но я ввожу C:\Openp.txt тк он сохранен текст доком
+i=1
+with open(path_to_file) as file:
+    for line in file:
+        print(line)
+        i=i+1
+        if i>10:
+            break
